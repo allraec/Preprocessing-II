@@ -172,22 +172,35 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 30px auto;
-  border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 30px;
 }
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header nav .top-page {
   padding: 30px 0 30px 0;
 }
 header nav a {
-  margin: 30px auto;
-  padding: 5px;
+  margin: 1vw;
   padding-top: 30px;
   font-size: 1.7rem;
+}
+header nav a:link {
+  color: black;
+  text-decoration: none;
+}
+header nav a:visited {
+  color: black;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header img {
+  margin-bottom: 30px;
 }
 .footer {
   width: 100%;
@@ -245,4 +258,13 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  background-color: #17A2B8;
+  border-radius: 15px;
+  padding: 15px 50px;
 }

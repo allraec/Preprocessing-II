@@ -1,3 +1,5 @@
+@import "mixins";
+
 .home {
 
   .content-section {
@@ -56,6 +58,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .button(white, 2rem, @button-bg, 15px);
+        padding: 15px 50px;
+      }
     }
   }
 }// home

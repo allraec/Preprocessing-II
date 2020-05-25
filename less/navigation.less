@@ -4,7 +4,7 @@ header{
     max-width: 800px;
     width: 100%;
     margin: 30px auto;
-    border-bottom: 2px dashed @navigation-border;
+    margin-bottom: 30px;
     nav{
         display: flex;
         flex-direction: row;
@@ -16,10 +16,25 @@ header{
         }
 
         a{
-            margin: 30px auto;
-            padding: 5px;
+            margin: 1vw;
             padding-top: 30px;
             font-size: 1.7rem;
+
+            &:link{
+                color: black;
+                text-decoration: none;
+            }
+            &:visited{
+                color: black;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
         }
+        border-bottom: 2px dashed @navigation-border;
     }
+
+    img{
+        margin-bottom: 30px;
+    };
 }
