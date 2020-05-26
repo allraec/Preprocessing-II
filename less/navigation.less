@@ -1,40 +1,40 @@
 // Navigation Styles here
 
-header{
+nav{
     max-width: 800px;
-    width: 100%;
-    margin: 30px auto;
-    margin-bottom: 30px;
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 
-        .top-page{
-            padding: 30px 0 30px 0;
+    .top-page{
+        padding: 30px 0 30px 0;
+        @media screen and @mobile{
+            padding: 1.5rem;
         }
-
-        a{
-            margin: 1vw;
-            padding-top: 30px;
-            font-size: 1.7rem;
-
-            &:link{
-                color: black;
-                text-decoration: none;
-            }
-            &:visited{
-                color: black;
-            }
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-        border-bottom: 2px dashed @navigation-border;
     }
 
-    img{
-        margin-bottom: 30px;
-    };
+    a{
+        margin: 1vw;
+        padding-top: 30px;
+        font-size: 1.7rem;
+
+        &:link{
+            color: black;
+            text-decoration: none;
+        }
+        &:visited{
+            color: black;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+    @media screen and @mobile{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
 }
